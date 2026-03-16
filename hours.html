@@ -2,43 +2,53 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF=8">
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Dave Gray">
 <meta name="descrption" content="Store Hours for The Little Taco Shop">
 <title>LTS Hours</title>
 <link rel="icon" href="favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <h1>The Little Taco Shop Hours</h1>
-    <nav>
-        <ul>
+  <header class="header">
+    <h1 class="header_h1">Little Taco Shop</h1>
+    <nav class="header_nav">
+        <ul class="header_ul">
              <li>
                 <a href="/">Home</a>
             </li>
+          
             <li>
-                <a href="/#about">About <abbr title="The Little Taco Shop">LTS</abbr></a>
-            </li>
-            <li>
-                <a href="/#menu">Our Menu</a>
+                <a href="/#menu">Menu</a>
             </li>
            
             <li>
-                <a href="contacts.html">Contact Us</a>
+                <a href="contacts.html">Contact</a>
+            </li>
+              <li>
+                <a href="about.html">About <abbr title="The Little Taco Shop">LTS</abbr></a>
             </li>
         </ul>
     </nav>
-    <figure>
-       <img src="images/hours-open.png" alt="A Tray of Tasty Tacos" title="We love trays of tacos!" width="400" height="267"> 
+   
+  </header>  
+  <section class="hero">
+    <h2>Our Store Hours</h2>
+     <figure>
+       <img src="imgs/hours-open.png" alt="A Tray of Tasty Tacos" title="We love trays of tacos!" width="1000" height="667"> 
        <figcaption>
         A Tray of Tasty Tacos
        </figcaption>
-    </figure>
-  </header>  
-  <hr>
-  <main>
+       </figure>
+  </section>
+  
+
+  <main class="main">
+    <article class="main_article">
+      <h2>Hours</h2>
 <p>
   We are open 7 days a week!
   <dl>
@@ -47,13 +57,15 @@
     <dt>Friday-Saturday</dt>
     <dd>11am-11pm</dd>
   </dl>
-  <p>
-    <a href="#">Back To Top</a>
-</p>
+ 
+</article>
   </main>
-  <hr>
-  <footer>
-    <p> Copyright &copy; The Little Taco Shop</p>
+  <footer class="footer">
+    <p> 
+      <span class="nowrap">Copyright &copy; <time id="year"></time></span>
+      <span class="nowrap"> The Little Taco Shop </span>
+       
+      </p>
   </footer>
 </body>
 
